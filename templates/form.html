@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-   scale=1.0" name="viewport">
+    <title>TOPSIS-guleri24</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+<main>
+    <h1>TOPSIS</h1>
+    <form enctype="multipart/form-data" method="POST">
+        <div class="full-width">
+            <label for="file">Choose an input csv:</label>
+            <input id="file" name="file" required type="file">
+        </div>
+        <div class="full-width">
+            <label for="weights">Weights:</label>
+            <input id="weights" name="weights" pattern="[0-9,]+" placeholder="1,1,1,1" required type="text">
+        </div>
+        <div class="full-width">
+            <label for="impacts">Impacts:</label>
+            <input id="impacts" name="impacts" pattern="[+,-]+" placeholder="+,+,-,+" required type="text">
+        </div>
+        <div class="full-width">
+            <label for="email">Email:</label>
+            <input id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                   placeholder="username@domain" required type="text"> <!--  custom email placeholder here-->
+        </div>
+        <div class="full-width">
+            <button type="submit">Send Response</button>
+            <button type="reset">Clear Form</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>
