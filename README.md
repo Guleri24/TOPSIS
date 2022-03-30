@@ -18,7 +18,7 @@ Email - add a valid email address
     uvicorn --port 5000 --host 127.0.0.1 main:app --reload
 
 ### Email service setup
-Add your email and app password in the main.py.
+Add your email and app password in the mail.py.
 [how-to-configure-gmail-smtp](https://support.cloudways.com/en/articles/5131076-how-to-configure-gmail-smtp)
 
 Read this article for more info [python-send-email](https://realpython.com/python-send-email/)
